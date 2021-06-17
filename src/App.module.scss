@@ -1,0 +1,28 @@
+body {
+  padding: 20px;
+  background: rgb(40, 38, 65);
+  background: #002bff91;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.box {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+p,
+ul,
+li,
+h1,
+h2 {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.6);
+}
