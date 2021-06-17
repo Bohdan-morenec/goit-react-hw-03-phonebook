@@ -46,7 +46,7 @@ class App extends Component {
     this.setState({ filter: value });
   };
 
-  deleteTodo = (todoId) => {
+  deleteFormContact = (todoId) => {
     this.setState((prevState) => ({
       contacts: prevState.contacts.filter((todo) => todo.id !== todoId),
     }));
@@ -69,7 +69,7 @@ class App extends Component {
           <ContactList
             filteredArrayContact={this.filteredArrayContact}
             key={uuidv4}
-            deleteTodo={this.deleteTodo}
+            deleteFormContact={this.deleteFormContact}
           />
         </div>
       </div>

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import style from "./ContactList.module.scss";
 
-export const ContactList = ({ filteredArrayContact, deleteTodo }) => {
+export const ContactList = ({ filteredArrayContact, deleteFormContact }) => {
   return (
     <ul className={style.list}>
       {filteredArrayContact().map(({ name, number, id }) => (
@@ -12,7 +12,7 @@ export const ContactList = ({ filteredArrayContact, deleteTodo }) => {
           <button
             className={style.button}
             type="button"
-            onClick={() => deleteTodo(id)}
+            onClick={() => deleteFormContact(id)}
           >
             Удалить
           </button>
@@ -23,6 +23,6 @@ export const ContactList = ({ filteredArrayContact, deleteTodo }) => {
 };
 
 ContactList.propTypes = {
-  deleteTodo: PropTypes.func.isRequired,
+  deleteFormContact: PropTypes.func.isRequired,
   filteredArrayContact: PropTypes.func.isRequired,
 };
